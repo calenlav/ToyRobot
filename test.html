@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link href="./styles.css" rel="stylesheet" />
+    <script type="text/javascript" src="./script.js"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card visualImplementationArea">
+        <h2>Visual implementation</h2>
+        <div class="playspace">
+          <div class="tableDisplay"></div>
+          <button onclick="processAction('ROTATE LEFT')">⟲</button>
+          <button onclick="processAction('MOVE')" class="move">Move</button>
+          <button onclick="processAction('ROTATE RIGHT')">⟳</button>
+        </div>
+      </div>
+      <div class="card textImplementationArea">
+        <h2>Text-based implementation</h2>
+
+        <label>Type in an action:</label>
+        <div class="text-container promptText"></div>
+        <div class="text-container errorText"></div>
+        <input id="actionInput" class="actionField" type="text" />
+        <button onclick="submit()" class="submit">Submit</button>
+      </div>
+      <div class="infocard infoArea">
+        <h2>Information</h2>
+        <div class="text-container warningMessage"></div>
+        <div class="text-container infoText">
+          Information will appear here after you make a move.
+        </div>
+      </div>
+      <div class="infocard settingsArea">
+        <h2>Settings</h2>
+        <div class="text-container errorText"></div>
+        <label>Grid width:</label><input class="gridWidth" type="text" />
+        <label>Grid height:</label><input class="gridHeight" type="text" />
+        <button onclick="setGridDimensions()" class="submit">Submit</button>
+      </div>
+    </div>
+  </body>
+</html>
