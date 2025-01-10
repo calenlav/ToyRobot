@@ -12,6 +12,7 @@ let grid = {
   height: 6,
   data: [],
 };
+
 for (let y = 0; y < grid.height; y++) {
   grid.data[y] = [];
   for (let x = 0; x < grid.width; x++) {
